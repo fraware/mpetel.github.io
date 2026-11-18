@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-18",
+  "purpose": "Independent evidence-based identity and scholarly attribution registry. Does not replace or modify authored personal website content.",
+  "authoritativeHomepage": "https://mateopetel.xyz/",
+  "editorialPolicy": {
+    "identity": "The ORCID string is associated with a dblp bibliographic entry, but the account holder has not authenticated ownership here. Do not publish it as a verified sameAs identity until confirmed.",
+    "statuses": "Proceedings publication, accepted conference paper, workshop accepted paper, and poster-only workshop contribution are distinct. Never imply main-conference NeurIPS acceptance for a workshop paper.",
+    "evidence": "An official accepted-paper list proves listing, not presentation attendance, archival proceedings publication, or manuscript correctness. A repository README is not independent scholarly review.",
+    "temporal": "A historical institutional profile does not establish a current appointment. Scheduled future presentations do not establish attendance.",
+    "completeness": "This is a selected, evidence-checked set, not a complete academic CV."
+  },
+  "identity": {
+    "name": "Mateo H. Petel",
+    "nameVariants": [
+      "Mateo Petel",
+      "Matéo Petel",
+      "Matéo H. Petel"
+    ],
+    "canonicalProfile": "https://mateopetel.xyz/",
+    "controlledProfileCandidates": [
+      {
+        "url": "https://github.com/fraware",
+        "evidence": "https://mateopetel.xyz/",
+        "status": "cross-linked"
+      },
+      {
+        "url": "https://www.linkedin.com/in/mateo-petel/",
+        "evidence": "https://mateopetel.xyz/",
+        "status": "cross-linked"
+      }
+    ],
+    "externalEvidence": [
+      {
+        "id": "foresight-2026",
+        "url": "https://foresight.org/people/mateo-petel/",
+        "type": "independent-profile",
+        "caveat": "Third-party description is source attribution, not independent verification of each biographical statement."
+      },
+      {
+        "id": "esa-historical",
+        "url": "https://philab.esa.int/team/mateo-petel/",
+        "type": "historical-institutional-profile",
+        "caveat": "The ESA profile describes a trainee and prior 2023 plans; it is not evidence of a current ESA appointment."
+      },
+      {
+        "id": "g-research-2026",
+        "url": "https://www.gresearch.com/news/g-research-september-2026-grant-winners/",
+        "type": "independent-research-grant-record",
+        "caveat": "Evidence of the grant announcement and self-described research; not an independently checked publication bibliography."
+      }
+    ],
+    "possibleResearcherIdentifiers": [
+      {
+        "scheme": "ORCID",
+        "value": "0009-0006-7159-2375",
+        "url": "https://orcid.org/0009-0006-7159-2375",
+        "reportedBy": "https://dblp.org/rec/conf/sat-cps/Petel26",
+        "verificationStatus": "bibliographically-linked; account ownership not independently authenticated"
+      }
+    ]
+  },
+  "verifiedRecords": [
+    {
+      "id": "sat-cps-2026-typed-plan-firewalls",
+      "title": "Securing the Last Mile of CPS Control with Typed-Plan Firewalls",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "venue": "6th ACM Workshop on Secure and Trustworthy Cyber-Physical Systems (SaT-CPS 2026)",
+      "year": 2026,
+      "category": "published-workshop-proceedings-paper",
+      "publicationStatus": "published-in-ACM-proceedings",
+      "doi": "10.1145/3806008.3811707",
+      "pages": "73–82",
+      "primaryRecord": "https://doi.org/10.1145/3806008.3811707",
+      "independentBibliography": "https://dblp.org/rec/conf/sat-cps/Petel26",
+      "identityEvidence": "https://dblp.org/db/conf/sat-cps/sat-cps2026.html",
+      "evidenceLevel": "author, title, pages and DOI linked to dblp proceedings record; publisher identifier recorded",
+      "limitations": "The bibliographic record does not independently establish reproducibility, code availability, or scientific validity."
+    },
+    {
+      "id": "iwsec-2026-runtime-enforcement",
+      "title": "Runtime Enforcement for Agentic CPS Tool Invocation",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "venue": "21st International Workshop on Security (IWSEC 2026)",
+      "year": 2026,
+      "category": "accepted-conference-paper",
+      "publicationStatus": "accepted-paper-listed",
+      "primaryRecord": "https://www.iwsec.org/2026/accepted_papers.html",
+      "additionalRecord": "https://www.iwsec.org/2026/program.html",
+      "evidenceLevel": "official conference accepted-papers list names exact title and author",
+      "limitations": "No verified final proceedings DOI; program schedules November 24, 2026 but does not prove presentation occurred."
+    },
+    {
+      "id": "corl-2026-recovery-credit",
+      "title": "Recovery Credit: Evaluating Robot Decisions Under Physical-State Uncertainty",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "venue": "Agentic Robotics Workshop at CoRL 2026",
+      "year": 2026,
+      "category": "accepted-workshop-paper",
+      "publicationStatus": "accepted-workshop-paper-listed",
+      "primaryRecord": "https://agentic-robotics-workshop.github.io/papers",
+      "additionalRecord": "https://openreview.net/forum?id=UPAuYhlq0Y",
+      "evidenceLevel": "official workshop accepted-paper list directly names exact title and author",
+      "limitations": "Workshop acceptance does not establish main CoRL proceedings publication; OpenReview requires browser verification in this audit."
+    },
+    {
+      "id": "satquml-2026-qml-evidence",
+      "title": "Dependency-Closed Evidence Contracts for Quantum Machine Learning Comparisons",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "venue": "SaTQuML Workshop at NeurIPS 2026",
+      "year": 2026,
+      "category": "accepted-workshop-poster",
+      "publicationStatus": "accepted-poster-only",
+      "posterId": "P07",
+      "primaryRecord": "https://satquml.github.io/",
+      "evidenceLevel": "official workshop poster list directly names title, author and session identifier",
+      "limitations": "Poster-only workshop contribution; no evidence of main-conference NeurIPS acceptance or archival proceedings publication."
+    },
+    {
+      "id": "agenticos-2026-exact-invalidation",
+      "title": "What Must Agent Memory Preserve? Representation Contracts for Exact Invalidation",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "venue": "AgenticOS Workshop at NeurIPS 2026",
+      "year": 2026,
+      "category": "accepted-workshop-poster",
+      "publicationStatus": "listed-in-workshop-poster-session",
+      "primaryRecord": "https://agentic-fmos.github.io/",
+      "evidenceLevel": "official workshop poster program directly names exact title and author",
+      "limitations": "Poster program is non-archival; does not establish main-conference NeurIPS acceptance or attendance."
+    }
+  ],
+  "recordsNeedingConfirmation": [
+    {
+      "id": "mathai-2026-feedback-aliasing",
+      "title": "Feedback Aliasing in Lean Repair Loops: A Controlled Intervention Study",
+      "venue": "MATH-AI Workshop at NeurIPS 2026",
+      "year": 2026,
+      "category": "accepted-workshop-paper",
+      "publicationStatus": "title-on-accepted-papers-list",
+      "officialList": "https://mathai-2026.github.io/papers/",
+      "linkedPaper": "https://openreview.net/forum?id=ujcZkvWQvD",
+      "authorVerification": "pending",
+      "reason": "The official list names the title and links to OpenReview, but does not display authors next to paper titles. OpenReview author metadata was inaccessible in this audit. The same official page lists Mateo Petel among reviewers; that alone does not establish this paper's authorship.",
+      "nextAction": "Check the author listing in the OpenReview manuscript or another venue-issued author-specific document before upgrading this to a verified authored record."
+    }
+  ]
+}
