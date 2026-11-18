@@ -52,5 +52,10 @@
       "source": "https://github.com/fraware/leanverifier"
     }
   ],
-  "websiteContentPolicy": "The authored contents of index.html and the GitHub profile README are intentionally maintained outside this metadata index."
+  "websiteContentPolicy": "The authored contents of index.html and the GitHub profile README are intentionally maintained outside this metadata index.",
+  "scholarlyRecords": {
+    "url": "https://mateopetel.xyz/scholarly-records.json",
+    "purpose": "Primary-source-linked scholarly record, publication-status and author-attribution audit.",
+    "integrityNote": "Workshop acceptance is not main-conference publication; author attribution and ORCID account control remain explicitly qualified."
+  }
 }
