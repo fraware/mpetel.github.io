@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "canonicalUrl": "https://mateopetel.xyz/research.json",
+  "updatedOn": "2026-11-18",
+  "description": "Selected public research, writing, and software associated with Mateo H. Petel. Consult source repositories and their status documents before relying on a technical claim.",
+  "person": {
+    "name": "Mateo H. Petel",
+    "alternateName": "Mateo Petel",
+    "website": "https://mateopetel.xyz/",
+    "github": "https://github.com/fraware",
+    "linkedin": "https://www.linkedin.com/in/mateo-petel/"
+  },
+  "topics": [
+    "AI for science",
+    "scientific agents",
+    "scientific machine learning",
+    "formal verification",
+    "reliable autonomous systems",
+    "digital humanities"
+  ],
+  "works": [
+    {
+      "slug": "forward-science",
+      "title": "Forward Science",
+      "category": "Research essays",
+      "section": "Research writing",
+      "status": "Published essay series (2026)",
+      "description": "Essays on AI for science, the organization of scientific discovery, scientific institutions, and forward-deployed scientists.",
+      "url": "https://fraware.github.io/forward-science/",
+      "source": "https://github.com/fraware/forward-science"
+    },
+    {
+      "slug": "labtrust-gym",
+      "title": "LabTrust-Gym",
+      "category": "AI for science / agent evaluation",
+      "section": "Research software",
+      "status": "Research simulation only",
+      "description": "A multi-agent PettingZoo/Gym environment for evaluating automation, coordination, and runtime security in simulated hospital laboratories. Not a clinical deployment.",
+      "url": "https://github.com/fraware/LabTrust-Gym",
+      "source": "https://github.com/fraware/LabTrust-Gym"
+    },
+    {
+      "slug": "mathevidence",
+      "title": "MathEvidence",
+      "category": "Formal verification / scientific computing",
+      "section": "Research software",
+      "status": "Experimental research preview",
+      "description": "Infrastructure for checking precisely scoped evidence from external mathematical tools using Lean, with documented trust boundaries and eligibility limits.",
+      "url": "https://github.com/fraware/MathEvidence",
+      "source": "https://github.com/fraware/MathEvidence"
+    },
+    {
+      "slug": "leanverifier",
+      "title": "LeanVerifier",
+      "category": "Machine learning / formal verification",
+      "section": "Research software",
+      "status": "Research preview; release not authorized",
+      "description": "Experimental Lean 4 formal checks for affine binary classifiers over rational inputs. The stated formal claim remains under validation.",
+      "url": "https://github.com/fraware/leanverifier",
+      "source": "https://github.com/fraware/leanverifier"
+    },
+    {
+      "slug": "poelio",
+      "title": "POELIO",
+      "category": "Digital humanities / interactive literature",
+      "section": "Literature and writing",
+      "status": "Public independent project",
+      "description": "A bilingual literary environment for reading, studying compositional constraints, comparing passages, and creating original writing.",
+      "url": "https://fraware.github.io/POELIO/",
+      "source": "https://github.com/fraware/POELIO"
+    },
+    {
+      "slug": "verse",
+      "title": "Verse",
+      "category": "Privacy-first creative software",
+      "section": "Literature and writing",
+      "status": "Public open-source application",
+      "description": "A browser-local poetry editor using IndexedDB and explicit backups, with no accounts or cloud poem storage.",
+      "url": "https://fraware.github.io/verse/",
+      "source": "https://github.com/fraware/verse"
+    }
+  ]
+}
