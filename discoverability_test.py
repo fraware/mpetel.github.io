@@ -12,6 +12,14 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent
 DOMAIN = "https://mateopetel.xyz"
+HTML_PAGES = (
+    "index.html",
+    "research.html",
+    "publications.html",
+    "ai-for-science.html",
+    "scientific-agents.html",
+    "formal-verification.html",
+)
 
 
 class PageParser(HTMLParser):
@@ -56,17 +64,18 @@ class DiscoveryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.pages = {}
-        for name in ("index.html", "research.html"):
+        for name in HTML_PAGES:
             source = (ROOT / name).read_text(encoding="utf-8")
             parsed = PageParser()
             parsed.feed(source)
             cls.pages[name] = (source, parsed)
         cls.catalog = json.loads((ROOT / "research.json").read_text(encoding="utf-8"))
+        cls.publications = json.loads((ROOT / "publications.json").read_text(encoding="utf-8"))
 
     def test_html_metadata_and_canonical(self):
         for name, (source, page) in self.pages.items():
             with self.subTest(page=name):
-                expected = DOMAIN + ("/" if name == "index.html" else "/research.html")
+                expected = DOMAIN + ("/" if name == "index.html" else "/" + name)
                 self.assertTrue(source.lower().startswith("<!doctype html>"))
                 self.assertTrue(page.metas["description"])
                 self.assertIn("h1", page.headings)
@@ -84,6 +93,8 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(person["@id"], DOMAIN + "/#person")
         self.assertIn("https://github.com/fraware", person["sameAs"])
         self.assertIn("https://www.linkedin.com/in/mateo-petel/", person["sameAs"])
+        self.assertIn("https://foresight.org/people/mateo-petel/", person["sameAs"])
+        self.assertIn("https://philab.esa.int/team/mateo-petel/", person["sameAs"])
         self.assertEqual(graph["WebPage"]["mainEntity"]["@id"], person["@id"])
         research = json.loads("".join(self.pages["research.html"][1].scripts))
         index = {entry["@type"]: entry for entry in research["@graph"]}
@@ -124,9 +135,49 @@ class DiscoveryTests(unittest.TestCase):
         tree = ET.parse(ROOT / "sitemap.xml")
         ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
         indexed = {n.text for n in tree.findall("./s:url/s:loc", ns)}
-        self.assertEqual(indexed, {DOMAIN + "/", DOMAIN + "/research.html"})
+        self.assertEqual(indexed, {DOMAIN + ("/" if p == "index.html" else "/" + p)
+                                   for p in HTML_PAGES})
         robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
         self.assertIn("Sitemap: " + DOMAIN + "/sitemap.xml", robots)
+
+    def test_publication_provenance_and_status(self):
+        """Every scholarly item retains a primary authority and publication class."""
+        records = self.publications["publications"]
+        self.assertEqual(len(records), 5)
+        self.assertEqual(len({e["id"] for e in records}), len(records))
+        html = self.pages["publications.html"][0]
+        self.assertEqual(self.publications["canonicalUrl"], DOMAIN + "/publications.json")
+        for e in records:
+            with self.subTest(paper=e["id"]):
+                self.assertEqual(e["authors"], ["Mateo Petel"])
+                self.assertEqual(e["year"], 2026)
+                self.assertTrue(e["status"])
+                self.assertIn(e["title"], html)
+                self.assertIn('id="' + e["id"] + '"', html)
+                self.assertIn(e["primary"], html)
+                self.assertTrue(e["record"].startswith("https://"))
+                if e["kind"] == "proceedings-paper":
+                    self.assertEqual(e["doi"], "10.1145/3806008.3811707")
+                else:
+                    self.assertNotIn("doi", e, "Unpublished venue work must not imply a DOI")
+                if e["kind"].startswith("accepted-workshop"):
+                    self.assertIn("workshop", e["status"].lower())
+
+        schema = json.loads("".join(self.pages["publications.html"][1].scripts))
+        item_list = next(v for v in schema["@graph"] if v["@type"] == "ItemList")
+        self.assertEqual(len(item_list["itemListElement"]), len(records))
+        for item in item_list["itemListElement"]:
+            self.assertIn(item["url"].split("#")[-1], {e["id"] for e in records})
+
+    def test_internal_discovery_links(self):
+        home = self.pages["index.html"][0]
+        for page in ("publications.html", "ai-for-science.html",
+                     "scientific-agents.html", "formal-verification.html"):
+            self.assertIn('href="/' + page + '"', home)
+            self.assertIn('href="/' + page + '"', self.pages["research.html"][0])
+            self.assertIn(DOMAIN + "/" + page, (ROOT / "llms.txt").read_text(encoding="utf-8"))
+        self.assertEqual(self.catalog["publicationsIndex"], DOMAIN + "/publications.html")
+        self.assertEqual(self.catalog["bibliography"], DOMAIN + "/publications.json")
 
     def test_no_agent_instruction_in_public_pages(self):
         for name, (source, _) in self.pages.items():
