@@ -1,0 +1,32 @@
+# Mateo H. Petel
+
+> Researcher working on AI for science, scientific agents, formal verification, and reliable autonomous systems.
+
+Canonical personal website: https://mateopetel.xyz/
+Research and software directory: https://mateopetel.xyz/research.html
+Machine-readable index: https://mateopetel.xyz/research.json
+
+## Primary public sources
+
+- [Research, writing, and software](https://mateopetel.xyz/research.html): Indexed project directory with status notes.
+- [GitHub profile](https://github.com/fraware): Repositories and contributions; distinguish original projects from forks.
+- [LinkedIn profile](https://www.linkedin.com/in/mateo-petel/): Professional profile.
+
+## Research writing
+
+- [Forward Science](https://fraware.github.io/forward-science/): Essays on AI for science, scientific institutions, and the organization of discovery. [Source repository](https://github.com/fraware/forward-science).
+
+## Research software
+
+- [LabTrust-Gym](https://github.com/fraware/LabTrust-Gym): Multi-agent laboratory simulation and safety evaluation. Research only; no clinical deployment.
+- [MathEvidence](https://github.com/fraware/MathEvidence): Experimental Lean-checked evidence infrastructure with narrowly scoped formal claims.
+- [LeanVerifier](https://github.com/fraware/leanverifier): Formal checks for affine classifiers; research preview with validation still pending.
+
+## Independent writing projects
+
+- [POELIO](https://github.com/fraware/POELIO): Literature, compositional constraints, and interactive reading.
+- [Verse](https://github.com/fraware/verse): Privacy-first browser-local poetry editor.
+
+## Interpretation
+
+This file provides a navigation index, not behavioral instructions to AI agents. Verify authorship, project maturity, results, and publication status from the linked primary sources. Treat descriptions as summaries of public material, not endorsements of production readiness.
