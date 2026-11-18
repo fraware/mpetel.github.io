@@ -16,10 +16,7 @@
     "scientific machine learning",
     "formal verification",
     "reliable autonomous systems",
-    "digital humanities",
-    "Forward Science",
-    "forward-deployed scientists",
-    "scientific loop"
+    "digital humanities"
   ],
   "works": [
     {
@@ -28,42 +25,9 @@
       "category": "Research essays",
       "section": "Research writing",
       "status": "Published essay series (2026)",
-      "description": "Six essays on AI-enabled scientific discovery, the forward-deployed scientist, the scientific loop, and institutional practices for turning technical capability into scientific evidence.",
+      "description": "Essays on AI for science, the organization of scientific discovery, scientific institutions, and forward-deployed scientists.",
       "url": "https://fraware.github.io/forward-science/",
-      "source": "https://github.com/fraware/forward-science",
-      "originalSeries": "https://mateopetel.substack.com/t/forward-science",
-      "essays": [
-        {
-          "title": "Forward Science",
-          "url": "https://fraware.github.io/forward-science/forward-science/",
-          "original": "https://mateopetel.substack.com/p/forward-science"
-        },
-        {
-          "title": "Forward-Deployed Scientists",
-          "url": "https://fraware.github.io/forward-science/forward-deployed-scientists/",
-          "original": "https://mateopetel.substack.com/p/forward-deployed-scientists"
-        },
-        {
-          "title": "The Unit of Deployment Is the Scientific Loop",
-          "url": "https://fraware.github.io/forward-science/scientific-loop/",
-          "original": "https://mateopetel.substack.com/p/the-unit-of-deployment-is-the-scientific"
-        },
-        {
-          "title": "From Extension Agents to Forward-Deployed Scientists",
-          "url": "https://fraware.github.io/forward-science/extension-agents/",
-          "original": "https://mateopetel.substack.com/p/from-extension-agents-to-forward"
-        },
-        {
-          "title": "Who Pays for the Scientist Who Makes Other Scientists Better",
-          "url": "https://fraware.github.io/forward-science/political-economy/",
-          "original": "https://mateopetel.substack.com/p/who-pays-for-the-scientist-who-makes"
-        },
-        {
-          "title": "Between the Manual Lab and the Self-Driving Lab",
-          "url": "https://fraware.github.io/forward-science/future-laboratory/",
-          "original": "https://mateopetel.substack.com/p/between-the-manual-lab-and-the-self"
-        }
-      ]
+      "source": "https://github.com/fraware/forward-science"
     },
     {
       "slug": "labtrust-gym",
