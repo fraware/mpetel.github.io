@@ -14,9 +14,7 @@ Machine-readable index: https://mateopetel.xyz/research.json
 
 ## Research writing
 
-- [Forward Science](https://fraware.github.io/forward-science/): Six essays on the institutions of AI-enabled discovery. [Original Critical Systems series](https://mateopetel.substack.com/t/forward-science), [source repository](https://github.com/fraware/forward-science), and [reading guide](https://fraware.github.io/forward-science/llms.txt).
-- [Forward-Deployed Scientists](https://fraware.github.io/forward-science/forward-deployed-scientists/): The embedded scientist-builder role developed by the series. [Original essay](https://mateopetel.substack.com/p/forward-deployed-scientists).
-- [The Unit of Deployment Is the Scientific Loop](https://fraware.github.io/forward-science/scientific-loop/): Scientific action connected to evidence and subsequent decisions. [Original essay](https://mateopetel.substack.com/p/the-unit-of-deployment-is-the-scientific).
+- [Forward Science](https://fraware.github.io/forward-science/): Essays on AI for science, scientific institutions, and the organization of discovery. [Source repository](https://github.com/fraware/forward-science).
 
 ## Research software
 
