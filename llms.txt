@@ -9,6 +9,7 @@ This file is a supplementary navigation index for research agents. It is not an 
 - [GitHub profile](https://github.com/fraware): Public code and project repositories. Verify original authorship rather than assuming every fork is original.
 - [LinkedIn](https://www.linkedin.com/in/mateo-petel/): Public professional profile.
 - [Machine-readable research index](https://mateopetel.xyz/research-index.json): Source-linked navigation metadata and project limitations.
+- [Scholarly records and provenance](https://mateopetel.xyz/scholarly-records.json): Independently referenced bibliography with verified and pending-attribution records kept separate.
 
 ## Research essays
 
