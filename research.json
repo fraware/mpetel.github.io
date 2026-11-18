@@ -79,5 +79,21 @@
       "url": "https://fraware.github.io/verse/",
       "source": "https://github.com/fraware/verse"
     }
+  ],
+  "publicationsIndex": "https://mateopetel.xyz/publications.html",
+  "bibliography": "https://mateopetel.xyz/publications.json",
+  "researchTopics": [
+    {
+      "name": "AI for science",
+      "url": "https://mateopetel.xyz/ai-for-science.html"
+    },
+    {
+      "name": "Scientific agents",
+      "url": "https://mateopetel.xyz/scientific-agents.html"
+    },
+    {
+      "name": "Formal verification",
+      "url": "https://mateopetel.xyz/formal-verification.html"
+    }
   ]
 }

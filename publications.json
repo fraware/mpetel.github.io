@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "canonicalUrl": "https://mateopetel.xyz/publications.json",
+  "reviewedOn": "2026-11-18",
+  "identity": "https://mateopetel.xyz/#person",
+  "editorialPolicy": "Source-linked registry. Do not conflate accepted workshop contributions with main-conference proceedings or accepted conference papers with published proceedings. Verify authors and scholarly identifiers using primary records.",
+  "publications": [
+    {
+      "id": "typed-plan-firewalls",
+      "title": "Securing the Last Mile of CPS Control with Typed-Plan Firewalls",
+      "year": 2026,
+      "kind": "proceedings-paper",
+      "status": "Published in ACM workshop proceedings",
+      "venue": "6th ACM Workshop on Secure and Trustworthy Cyber-Physical Systems (SaT-CPS 2026)",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "date": "2026-06",
+      "doi": "10.1145/3806008.3811707",
+      "primary": "https://doi.org/10.1145/3806008.3811707",
+      "record": "https://dblp.org/db/conf/sat-cps/sat-cps2026.html",
+      "notes": "Proceedings pages 73–82. This is a bibliographic record, not a claim about production deployment or independently reproduced results.",
+      "topics": [
+        "runtime enforcement",
+        "cyber-physical systems",
+        "formal verification"
+      ]
+    },
+    {
+      "id": "iwsec-runtime-enforcement",
+      "title": "Runtime Enforcement for Agentic CPS Tool Invocation",
+      "year": 2026,
+      "kind": "accepted-conference-paper",
+      "status": "Accepted; scheduled for IWSEC 2026",
+      "venue": "21st International Workshop on Security (IWSEC 2026)",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "date": "2026-11-24",
+      "primary": "https://www.iwsec.org/2026/accepted_papers.html",
+      "record": "https://www.iwsec.org/2026/program.html",
+      "notes": "Official accepted-paper title. The scheduled November 24 presentation is in the conference program. A DOI and final proceedings link have not been verified.",
+      "topics": [
+        "runtime enforcement",
+        "scientific agents",
+        "cyber-physical systems"
+      ]
+    },
+    {
+      "id": "mathai-feedback-aliasing",
+      "title": "Feedback Aliasing in Lean Repair Loops: A Controlled Intervention Study",
+      "year": 2026,
+      "kind": "accepted-workshop-paper",
+      "status": "Listed among accepted MATH-AI workshop papers",
+      "venue": "MATH-AI Workshop at NeurIPS 2026",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "date": "2026-12-12",
+      "primary": "https://mathai-2026.github.io/papers/",
+      "record": "https://openreview.net/forum?id=ujcZkvWQvD",
+      "notes": "The workshop site lists the exact title and links to an OpenReview paper page. The public OpenReview author metadata was not independently retrievable during this audit; authorship follows the researcher's own record. No full-conference NeurIPS acceptance is asserted.",
+      "topics": [
+        "Lean 4",
+        "formal verification",
+        "agent evaluation"
+      ]
+    },
+    {
+      "id": "satquml-evidence-contracts",
+      "title": "Dependency-Closed Evidence Contracts for Quantum Machine Learning Comparisons",
+      "year": 2026,
+      "kind": "accepted-workshop-poster",
+      "status": "Accepted poster; non-archival workshop",
+      "venue": "SaTQuML Workshop at NeurIPS 2026",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "date": "2026-12-12",
+      "primary": "https://satquml.github.io/",
+      "record": "https://satquml.github.io/",
+      "notes": "The official workshop schedule lists poster P07 and its author. The workshop states that it has no official proceedings; workshop acceptance must not be described as acceptance to the main NeurIPS conference.",
+      "topics": [
+        "quantum machine learning",
+        "evaluation methodology",
+        "evidence contracts"
+      ]
+    },
+    {
+      "id": "agenticos-memory",
+      "title": "What Must Agent Memory Preserve? Representation Contracts for Exact Invalidation",
+      "year": 2026,
+      "kind": "accepted-workshop-poster",
+      "status": "Listed for AgenticOS workshop poster session",
+      "venue": "AgenticOS Workshop at NeurIPS 2026",
+      "authors": [
+        "Mateo Petel"
+      ],
+      "date": "2026-12-11",
+      "primary": "https://agentic-fmos.github.io/",
+      "record": "https://agentic-fmos.github.io/",
+      "notes": "Official workshop program lists the contribution and its author. The workshop is non-archival and has no formal proceedings. Poster listing does not establish a main-conference paper.",
+      "topics": [
+        "agent memory",
+        "state invalidation",
+        "scientific agents"
+      ]
+    }
+  ],
+  "selectedEssays": [
+    {
+      "title": "Forward Science",
+      "date": "2026-06-22",
+      "url": "https://mateopetel.substack.com/p/forward-science",
+      "focus": "An institutional doctrine for incorporating AI into scientific discovery."
+    },
+    {
+      "title": "Forward-Deployed Scientists",
+      "date": "2026-06-24",
+      "url": "https://mateopetel.substack.com/p/forward-deployed-scientists",
+      "focus": "The embedded scientist-builder role connecting advanced tools with research practice."
+    },
+    {
+      "title": "Science After Text",
+      "date": "2026-05-03",
+      "url": "https://mateopetel.substack.com/p/science-after-text",
+      "focus": "Machine-legible scientific knowledge, explicit assumptions, and scientific inheritance."
+    },
+    {
+      "title": "The AI Scientist Is the Wrong Unit of Analysis",
+      "date": "2026-09-13",
+      "url": "https://mateopetel.substack.com/p/the-ai-scientist-is-the-wrong-unit",
+      "focus": "Distinguishing automation, delegation, permissions, verification, and decision authority."
+    },
+    {
+      "title": "The Experiment Has Already Changed",
+      "date": "2026-09-06",
+      "url": "https://mateopetel.substack.com/p/the-experiment-has-already-changed",
+      "focus": "Why autonomous research depends on faithful tracking of experimental state."
+    }
+  ]
+}

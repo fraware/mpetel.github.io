@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scientific Agents: Memory, Runtime Control &amp; Evaluation | Mateo H. Petel</title>
+<meta name="description" content="Source-linked research on scientific agents, tool-use enforcement, memory invalidation, and evaluation by Mateo H. Petel.">
+<meta name="author" content="Mateo H. Petel">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mateopetel.xyz/scientific-agents.html">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scientific Agents: Memory, Runtime Control &amp; Evaluation | Mateo H. Petel">
+<meta property="og:description" content="Source-linked research on scientific agents, tool-use enforcement, memory invalidation, and evaluation by Mateo H. Petel.">
+<meta property="og:url" content="https://mateopetel.xyz/scientific-agents.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://mateopetel.xyz/scientific-agents.html#page",
+      "url": "https://mateopetel.xyz/scientific-agents.html",
+      "name": "Scientific Agents: Memory, Runtime Control & Evaluation | Mateo H. Petel",
+      "description": "Source-linked research on scientific agents, tool-use enforcement, memory invalidation, and evaluation by Mateo H. Petel.",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Scientific agents"
+        },
+        {
+          "@id": "https://mateopetel.xyz/#person"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://mateopetel.xyz/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}</script>
+<style>body{line-height:1.55;font-size:16px;padding:0 12px;margin:48px auto;max-width:700px}main{max-width:42em;margin:auto}nav,footer,.meta{font-size:.875rem}nav{margin-bottom:2rem}h1{line-height:1.2}h2{margin-top:2.25rem}article{margin:1.6rem 0 2rem}.meta{color:#444}footer{margin:3rem 0}a{text-underline-offset:2px}code{overflow-wrap:anywhere}</style>
+</head>
+<body><main>
+<nav aria-label="Research navigation"><a href="/">Home</a> · <a href="/research.html">Research</a> · <a href="/publications.html">Publications</a> · <a href="/ai-for-science.html">AI for science</a> · <a href="/scientific-agents.html">Scientific agents</a></nav>
+
+<h1>Scientific agents: state, evidence, and authority</h1>
+<p>Tool-using AI agents participate in scientific work through information retrieval, code execution, scheduling, instrument interfaces, and experimental records. Their behavior is consequential only in relation to the state they affect and the decisions authorized by the surrounding research organization. My work examines the difference between a model proposing an action and an accountable system admitting that action.</p>
+<h2>From individual tool calls to execution histories</h2>
+<p>An agent's tool call is a local event. Some safety and scientific obligations concern sequences of events, resource commitments, or the accumulated state of an experiment. The relevant question is which trusted evidence of prior execution must be retained for the next action to be evaluated correctly.</p>
+<p>My ACM SaT-CPS 2026 paper, <a href="https://doi.org/10.1145/3806008.3811707">Securing the Last Mile of CPS Control with Typed-Plan Firewalls</a>, is a published proceedings contribution in cyber-physical systems security. <a href="https://www.iwsec.org/2026/accepted_papers.html">Runtime Enforcement for Agentic CPS Tool Invocation</a> is listed as an accepted IWSEC 2026 paper; the <a href="https://www.iwsec.org/2026/program.html">program</a> schedules its presentation on November 24, 2026. The final IWSEC proceedings record was not confirmed during this audit. These records have distinct publication statuses.</p>
+<h2>Scientific memory and invalidation</h2>
+<p>Agent memory is not exhausted by retrieving prior text. The validity of a remembered observation depends on the environment, operation, and state transition to which it refers. Exact invalidation concerns the conditions under which an earlier record stops supporting a later action.</p>
+<p><a href="https://agentic-fmos.github.io/">What Must Agent Memory Preserve? Representation Contracts for Exact Invalidation</a> is listed for the NeurIPS 2026 AgenticOS workshop poster session. The associated <a href="https://mateopetel.substack.com/p/the-experiment-has-already-changed">essay on experimental state</a> develops the organizational problem. Workshop poster acceptance is separate from main-conference publication.</p>
+<h2>Evaluation and experimental scope</h2>
+<p>Agent evaluation needs to separate a model's proposed actions, actual exposure to an enforcement mechanism, enforcement decisions, and resulting world state. A high aggregate benchmark score alone does not establish that each obligation was exercised or that an unsafe transition would have been blocked.</p>
+<p><a href="https://github.com/fraware/LabTrust-Gym">LabTrust-Gym</a> provides a simulated multi-agent laboratory environment for testing coordination and security mechanisms. Its evaluation scope is simulation, with no clinical deployment claim. The <a href="/publications.html">publication index</a> includes the official conference and workshop records. See <a href="/ai-for-science.html">AI for science</a> for the related institutional interpretation of the scientific loop.</p>
+<footer><p><a href="/">Mateo H. Petel</a> · <a href="/research.html">Research directory</a> · <a href="/publications.json">Structured bibliography</a></p></footer>
+</main></body></html>
