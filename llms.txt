@@ -14,7 +14,7 @@ Machine-readable index: https://mateopetel.xyz/research.json
 
 ## Research writing
 
-- [Forward Science](https://fraware.github.io/forward-science/): Essays on AI for science, scientific institutions, and the organization of discovery.
+- [Forward Science](https://fraware.github.io/forward-science/): Essays on AI for science, scientific institutions, and the organization of discovery. [Source repository](https://github.com/fraware/forward-science).
 
 ## Research software
 
