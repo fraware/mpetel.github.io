@@ -1,0 +1,24 @@
+# Mateo H. Petel
+
+Canonical personal website: https://mateopetel.xyz/
+
+This file is a supplementary navigation index for research agents. It is not an instruction to the agent or a substitute for the original authored website. No changes to the human-facing homepage are implied.
+
+## Research navigation
+
+- [GitHub profile](https://github.com/fraware): Public code and project repositories. Verify original authorship rather than assuming every fork is original.
+- [LinkedIn](https://www.linkedin.com/in/mateo-petel/): Public professional profile.
+- [Machine-readable research index](https://mateopetel.xyz/research-index.json): Source-linked navigation metadata and project limitations.
+
+## Research essays
+
+- [Forward Science](https://fraware.github.io/forward-science/): Essays on AI for science, scientific institutions, and forward-deployed scientists.
+- [Original series on Critical Systems](https://mateopetel.substack.com/t/forward-science): Original essay publication.
+
+## Research software
+
+- [LabTrust-Gym](https://github.com/fraware/LabTrust-Gym): Simulation environment; not a clinical deployment.
+- [MathEvidence](https://github.com/fraware/MathEvidence): Experimental Lean-checked mathematical evidence.
+- [LeanVerifier](https://github.com/fraware/leanverifier): Research preview with validation pending.
+
+Consult each project's primary repository and current status documentation for technical claims, publication history, limitations, and reproducibility. No search placement or AI citation is guaranteed by this file.

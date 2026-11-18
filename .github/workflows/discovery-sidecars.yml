@@ -1,0 +1,29 @@
+name: Discovery sidecars and authored-page integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Validate crawler and machine-readable discovery sidecars
+        run: python .github/scripts/validate_discovery.py
+      - name: Prevent edits to authored homepage assets in this pull request
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git diff --exit-code "$BASE_SHA" HEAD -- index.html CNAME favicon.ico

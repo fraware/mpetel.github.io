@@ -1,0 +1,6 @@
+# Search-engine crawling instructions for the canonical personal website.
+# This file does not change the homepage, its design, or its content.
+User-agent: *
+Allow: /
+
+Sitemap: https://mateopetel.xyz/sitemap.xml
