@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Navigation and attribution metadata for research discovery; not a replacement for the authored homepage or primary sources.",
+  "site": "https://mateopetel.xyz/",
+  "identity": {
+    "name": "Mateo H. Petel",
+    "profileUrl": "https://mateopetel.xyz/",
+    "sameAs": [
+      "https://github.com/fraware",
+      "https://www.linkedin.com/in/mateo-petel/"
+    ]
+  },
+  "topics": [
+    "AI for science",
+    "scientific agents",
+    "formal verification",
+    "scientific discovery",
+    "runtime enforcement"
+  ],
+  "sourcePolicy": "Follow cited primary records for project maturity, claims, authorship, and publication status. GitHub forks do not establish authorship of the upstream work.",
+  "projects": [
+    {
+      "name": "Forward Science",
+      "type": "research-essay-series",
+      "summary": "Six essays on AI for science, scientific institutions, and forward-deployed scientists.",
+      "url": "https://fraware.github.io/forward-science/",
+      "source": "https://github.com/fraware/forward-science",
+      "originalPublication": "https://mateopetel.substack.com/t/forward-science"
+    },
+    {
+      "name": "LabTrust-Gym",
+      "type": "research-software",
+      "summary": "Multi-agent simulation and evaluation environment for laboratory automation and runtime security.",
+      "url": "https://github.com/fraware/LabTrust-Gym",
+      "maturity": "Research and simulation; not clinical deployment.",
+      "source": "https://github.com/fraware/LabTrust-Gym"
+    },
+    {
+      "name": "MathEvidence",
+      "type": "experimental-research-software",
+      "summary": "Experimental evidence contracts and Lean-checked results from external mathematical tools.",
+      "url": "https://github.com/fraware/MathEvidence",
+      "maturity": "Experimental preview with precisely scoped proof claims.",
+      "source": "https://github.com/fraware/MathEvidence"
+    },
+    {
+      "name": "LeanVerifier",
+      "type": "experimental-research-software",
+      "summary": "Research preview for formal properties of affine binary classifiers over rational values.",
+      "url": "https://github.com/fraware/leanverifier",
+      "maturity": "Validation incomplete; release not authorized.",
+      "source": "https://github.com/fraware/leanverifier"
+    }
+  ],
+  "websiteContentPolicy": "The authored contents of index.html and the GitHub profile README are intentionally maintained outside this metadata index."
+}
