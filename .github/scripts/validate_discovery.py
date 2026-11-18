@@ -88,6 +88,69 @@ class DiscoveryMetadataTests(unittest.TestCase):
                     project.get("maturity") or project.get("originalPublication")
                 )
 
+    def test_scholarly_registry_provenance(self) -> None:
+        """Only directly author-attributed records count as verified works."""
+        registry = json.loads(
+            (ROOT / "scholarly-records.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(registry["schemaVersion"], 1)
+        self.assertEqual(registry["authoritativeHomepage"], CANONICAL)
+        verified = registry["verifiedRecords"]
+        pending = registry["recordsNeedingConfirmation"]
+        self.assertEqual(len(verified), 5)
+        self.assertEqual(len(pending), 1)
+        self.assertEqual(
+            len({p["id"] for p in verified + pending}),
+            len(verified) + len(pending),
+        )
+        self.assertEqual(
+            {p["publicationStatus"] for p in verified},
+            {
+                "published-in-ACM-proceedings",
+                "accepted-paper-listed",
+                "accepted-workshop-paper-listed",
+                "accepted-poster-only",
+                "listed-in-workshop-poster-session",
+            },
+        )
+        for record in verified:
+            with self.subTest(record=record["id"]):
+                self.assertEqual(record["authors"], ["Mateo Petel"])
+                self.assertEqual(record["year"], 2026)
+                self.assertTrue(record["title"])
+                self.assertTrue(record["limitations"])
+                self.assertEqual(urlsplit(record["primaryRecord"]).scheme, "https")
+                if "doi" in record:
+                    self.assertEqual(
+                        record["category"], "published-workshop-proceedings-paper"
+                    )
+                else:
+                    self.assertNotIn(
+                        "published-in-ACM-proceedings",
+                        record["publicationStatus"],
+                    )
+        for candidate in pending:
+            with self.subTest(candidate=candidate["id"]):
+                self.assertNotIn("authors", candidate)
+                self.assertEqual(candidate["authorVerification"], "pending")
+                self.assertEqual(urlsplit(candidate["officialList"]).scheme, "https")
+        identifiers = registry["identity"]["possibleResearcherIdentifiers"]
+        self.assertEqual(len(identifiers), 1)
+        self.assertIn("not independently authenticated",
+                      identifiers[0]["verificationStatus"])
+        self.assertEqual(
+            self.catalogue_scholarly_url(),
+            CANONICAL + "scholarly-records.json",
+        )
+
+    @staticmethod
+    def catalogue_scholarly_url() -> str:
+        """Return the sidecar link recorded in the existing research index."""
+        catalog = json.loads(
+            (ROOT / "research-index.json").read_text(encoding="utf-8")
+        )
+        return catalog["scholarlyRecords"]["url"]
+
     def test_agent_navigation_is_descriptive(self) -> None:
         """The optional llms file is an index, not a behavioral instruction."""
         llms = (ROOT / "llms.txt").read_text(encoding="utf-8")
